@@ -1,2 +1,2 @@
 # Sims
-Ejercicio
+Ejercicio hecho en clases, practicando objetos.
