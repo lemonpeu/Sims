@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Sims';
+    src: url('thesimssansbold.woff')
+}
+
+html {
+    background: linear-gradient(to right, #c2e59c, #64b3f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Sims';
+}
+
+img {
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+h1 {
+    margin-top: 0;
+    color: #3a4773;
+}
+
+.outer-actions,
+.outer-stats {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    margin-top: 50px;
+    margin-right: 60px;
+    float: right;
+    clear: right;
+    position: relative;
+    z-index: 1;
+}
+
+.actions,
+.stats {
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.empty-bar {
+    height: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #eae9e9, #c5c5c5);
+    margin: 25px 0;
+    position: relative;
+}
+
+.bar {
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #8cc020;
+    transition: 1s;
+}
+
+.bar::after {
+    content: "";
+    height: 20px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.circle::before {
+    content: "";
+    height: 40px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.icon {
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    font-size: 18px;
+    position: absolute;
+    z-index: 1;
+    top: 0
+}
+
+.action {
+    cursor: pointer;
+    transition: .3s;
+    color: #3a4773;
+    padding-left: 0px;
+    user-select: none;
+}
+
+.action:hover {
+    color: #8cc020;
+    padding-left: 15px;
+}
+
+.azul {
+    background-color: #2196F3;
+}
+
+.verde {
+    background-color:  #8cc020;
+}
+
+.amarillo {
+    background-color: #FFEB3B;
+}
+
+.naranja {
+    background-color: #FFC107;
+}
+
+.rojo {
+    background-color: #F44336;
+}
+
+
